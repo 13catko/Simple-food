@@ -1,0 +1,226 @@
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #31352B;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #F9FAFF;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+
+// ↓↓↓↓↓ Активные Стили для кнопки  ↓↓↓↓↓ ///
+.active-btn:hover {
+  color: #FF6838;
+
+  path {
+    fill: #FF6838;
+  }
+
+  border-radius: 5px;
+  background-color: #FFF;
+  box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.70);
+}
+
+.active-btn:focus {
+  color: #FF6838;
+
+  path {
+    fill: #FF6838;
+  }
+
+  border-radius: 5px;
+  background-color: rgba(255, 122, 80, 0.10);
+  box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.70);
+}
+
+.active-btn:active {
+  border-radius: 5px;
+  background-color: #FFF2ED;
+  box-shadow: none;
+}
+////↑↑↑↑↑ Активные Стили для кнопки ↑↑↑↑↑↑////
+
+
+
+//// ↓↓↓↓↓ Активные Стили для logo↓↓↓↓↓↓ ///////
+.logo-active:hover {
+  opacity: 0.8;
+}
+
+.logo-active:focus {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.01);
+  box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.70);
+}
+
+.logo-active:active {
+  opacity: 0.5;
+  box-shadow: none;
+}
+
+////  ↑↑↑↑ Активные Стили для logo↑ ↑↑↑↑↑  ////
+
+
+
+//// ↓↓↓↓↓ Активные Стили для form ↓↓↓↓↓↓ ///////
+.form-active:focus {
+  border-radius: 5px;
+  border: 1px solid rgba(194, 194, 194, 0.00);
+  background-color: #FFF;
+  box-shadow: 0px 0px 0px 2px #FF6838;
+}
+
+.form-active:focus::placeholder {
+  color: #363853;
+}
+
+////  ↑↑↑↑ Активные Стили для form ↑↑↑↑↑  ////
+
+
+
+//// ↓↓↓↓↓ Активные Стили для link ↓↓↓↓↓↓ ///////
+.link-active:hover {
+  color: #FF6838;
+
+  path {
+    stroke: #FF6838;
+  }
+}
+
+.link-active:focus {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.01);
+  box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.70);
+}
+
+.link-active:active {
+  color: #31352B;
+  text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.50);
+  box-shadow: none;
+  filter: drop-shadow(0px 0px 5px rgba(49, 53, 43, 0.50));
+
+  path {
+    stroke: #31352B;
+  }
+}
+
+////↑↑↑↑ Активные Стили для link ↑↑↑↑↑  ////
+
+
+//// ↓↓↓↓↓ Активные Стили для ecomerce ↓↓↓↓↓↓ ///////
+.icon-active:hover {
+  border-radius: 5px;
+  background-color: #FF7A50;
+
+  path {
+    stroke: #FFF;
+  }
+
+  ellipse {
+    stroke: #FFF;
+  }
+
+  span {
+    background-color: #fff;
+    color: #FF6838;
+  }
+}
+
+
+.icon-active:focus {
+  border-radius: 5px;
+  background-color: rgba(255, 122, 80, 0.10);
+  box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.70);
+
+  path {
+    stroke: #363853;
+  }
+
+  ellipse {
+    stroke: #363853;
+  }
+
+  span {
+    background-color: #FF6838;
+    color: #FFF;
+  }
+}
+
+.icon-active:active {
+  border-radius: 5px;
+  background-color: #FFF2ED;
+  box-shadow: none;
+
+  path {
+    stroke: #363853;
+  }
+
+  ellipse {
+    stroke: #363853;
+  }
+
+  span {
+    background-color: #FF6838;
+    color: #FFF;
+  }
+}
+
+////↑↑↑↑ Активные Стили для ecomerce ↑↑↑↑↑  ////
+
+
+
+.social-icon-active:hover {
+  circle {
+    fill: #FF7A50;
+  }
+
+  path {
+    fill: #fff;
+  }
+}
+
+.social-icon-active:focus {
+  background-color: #ff7a501a;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.70);
+
+  circle {
+    fill: #ff7a501a;
+  }
+
+  path {
+    fill: #31352B;
+  }
+}
+
+.social-icon-active:active {
+  box-shadow: none;
+
+  circle {
+    fill: #FFF2ED;
+  }
+
+  path {
+    fill: #FF7A50;
+  }
+}

@@ -1,0 +1,244 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.header {
+  padding: 60px 0;
+}
+
+.logo {
+  padding: 4px 0 0 0;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-right: 63px;
+  }
+
+  &__list-item:not(:last-child) {
+    margin-right: 45px;
+  }
+
+  &__list-link {
+    font-size: 18px;
+    transition:
+      color 0.3s ease,
+      border-radius 0.3s ease,
+      background-color 0.3s ease,
+      box-shadow 0.3s ease,
+      text-shadow 0.3s ease;
+  }
+
+  &__ecommerce-list {
+    display: flex;
+  }
+
+  &__ecommerce-item {
+    position: relative;
+  }
+
+  &__ecommerce-link span {
+    transition:
+      background-color 0.3s ease,
+      border-radius 0.3s ease;
+  }
+
+  .icon-active svg ellipse {
+    transition: stroke 0.3s ease;
+  }
+
+  .icon-active svg path {
+    transition: stroke 0.3s ease;
+  }
+
+  &__ecommerce-item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  &__ecommerce-link {
+    display: block;
+    padding: 10px;
+    height: 44px;
+    transition: 
+    border-radius 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  }
+
+  &__ecommerce-link-num {
+    font-size: 10px;
+    color: #fff;
+    background-color: #FF6838;
+    border-radius: 50%;
+    line-height: 1.5;
+    width: 14px;
+    height: 14px;
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+  }
+}
+
+
+
+
+
+
+
+
+
+.footer {
+  &__inner {
+    padding: 60px 0;
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 70px;
+  }
+
+  &__item-form {
+    max-width: 200px;
+    width: 100%;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    display: block;
+    font-size: 14px;
+    padding: 11px 15px 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #C2C2C2;
+    margin-bottom: 12px;
+    width: 100%;
+    transition: border-radius 0.3s ease, border 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+
+    &::placeholder {
+      color: #C2C2C2;
+      font-size: 14px;
+      font-weight: 400;
+      padding: 0;
+      transition: color 0.3s ease;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 13px 46px 13px 63px;
+    background-color: #FF6838;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease, border-radius 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .active-btn svg path {
+    transition: fill 0.3s ease;
+  }
+
+  &__btn-icon {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 32px;
+    top: 16px;
+  }
+
+  &__info-item {
+    margin-bottom: 20px;
+  }
+
+  &__info-link {
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.18px;
+    transition:
+      color 0.3s ease,
+      border-radius 0.3s ease,
+      background-color 0.3s ease,
+      box-shadow 0.3s ease,
+      text-shadow 0.3s ease;
+  }
+
+  &__contact-link {
+    font-size: 16px;
+    padding-left: 31px;
+    position: relative;
+    transition:
+      color 0.3s ease,
+      border-radius 0.3s ease,
+      background-color 0.3s ease,
+      box-shadow 0.3s ease,
+      text-shadow 0.3s ease;
+  }
+
+  &__contact-icon {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 0;
+    top: -2px;
+  }
+
+  .link-active svg path {
+    transition: stroke 0.3s ease;
+  }
+
+  &__social-list {
+    display: flex;
+  }
+
+  &__social-link {
+    display: block;
+    width: 39px;
+    height: 39px;
+    transition: 
+    background-color 0.3s ease,
+    border-radius 0.3s ease,
+    box-shadow 0.3s ease;
+  }
+
+  .social-icon-active svg path {
+    transition: fill 0.3s ease;
+  }
+
+  .social-icon-active svg circle {
+    transition: fill 0.3s ease;
+  }
+
+  &__social-link:not(:last-child) {
+    margin-right: 13px;
+  }
+}
+
+
+.footer__copyright {
+  text-align: center;
+  font-size: 14px;
+  padding: 30px 0;
+  border-top: 1px solid rgba(194, 194, 194);
+}
+
+@import 'media';
