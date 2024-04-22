@@ -11,215 +11,229 @@ body {
 
 body {
   @extend %rubik-400;
-  color: #31352B;
+  color: $default;
   font-size: 20px;
   font-style: normal;
   line-height: 1.5;
-  background-color: #F9FAFF;
+  background-color: $bg;
   display: flex;
   flex-direction: column;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 main {
   flex-grow: 1;
 }
 
+.button {
+  color: $white;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: $accent;
+  font-size: 14px;
+  @extend %rubik-500;
+  position: relative;
+  transition: color 0.3s ease,
+    border-radius 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
 .link-active--deskr {
-  color: #FF6838;
+  color: $accent;
 }
 
 // ↓↓↓↓↓ Активные Стили для кнопки  ↓↓↓↓↓ ///
-.active-btn:hover {
-  color: #FF6838;
+.active-btn {
+  &:hover {
+    color: $accent;
 
-  path {
-    fill: #FF6838;
+    path {
+      fill: $accent;
+    }
+
+    background-color: $white;
+    box-shadow: 0px 0px 0px 2px rgba($accent, 0.70);
   }
 
-  border-radius: 5px;
-  background-color: #FFF;
-  box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.70);
-}
+  &:focus {
+    color: $accent;
+    background-color: rgba(255, 122, 80, 0.10);
+    box-shadow: 0 0 0 2px rgba($accent, 0.70);
 
-.active-btn:focus {
-  color: #FF6838;
-
-  path {
-    fill: #FF6838;
+    path {
+      fill: $accent;
+    }
   }
 
-  border-radius: 5px;
-  background-color: rgba(255, 122, 80, 0.10);
-  box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.70);
+  &:active {
+    background-color: #FFF2ED;
+    box-shadow: none;
+  }
 }
-
-.active-btn:active {
-  border-radius: 5px;
-  background-color: #FFF2ED;
-  box-shadow: none;
-}
-////↑↑↑↑↑ Активные Стили для кнопки ↑↑↑↑↑↑////
-
 
 
 //// ↓↓↓↓↓ Активные Стили для logo↓↓↓↓↓↓ ///////
-.logo-active:hover {
-  opacity: 0.8;
+.logo-active {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.01);
+    box-shadow: 0 0 0 2px rgba($accent, 0.70);
+  }
+
+  &:active {
+    opacity: 0.5;
+    box-shadow: none;
+  }
 }
-
-.logo-active:focus {
-  background-color: rgba(255, 255, 255, 0.01);
-  box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.70);
-}
-
-.logo-active:active {
-  opacity: 0.5;
-  box-shadow: none;
-}
-
-////  ↑↑↑↑ Активные Стили для logo↑ ↑↑↑↑↑  ////
-
-
 
 //// ↓↓↓↓↓ Активные Стили для form ↓↓↓↓↓↓ ///////
-.form-active:focus {
-  border-radius: 5px;
-  border: 1px solid rgba(194, 194, 194, 0.00);
-  background-color: #FFF;
-  box-shadow: 0px 0px 0px 2px #FF6838;
+.form-active {
+  &:focus {
+    border-radius: 5px;
+    border: 1px solid rgba(194, 194, 194, 0.00);
+    background-color: $white;
+    box-shadow: 0 0 0 2px $accent;
+  }
+
+  &:hover::placeholder {
+    color: $title;
+  }
 }
-
-.form-active:hover::placeholder {
-  color: #363853;
-}
-
-////  ↑↑↑↑ Активные Стили для form ↑↑↑↑↑  ////
-
-
 
 //// ↓↓↓↓↓ Активные Стили для link ↓↓↓↓↓↓ ///////
-.link-active:hover {
-  color: #FF6838;
+.link-active {
+  &:hover {
+    color: $accent;
 
-  path {
-    stroke: #FF6838;
+    path {
+      stroke: $accent;
+    }
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.01);
+    box-shadow: 0 0 0 2px rgba($accent, 0.70);
+  }
+
+  &:active {
+    color: #31352B;
+    text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.50);
+    box-shadow: none;
+    filter: drop-shadow(0px 0px 5px rgba(49, 53, 43, 0.50));
+
+    path {
+      stroke: #31352B;
+    }
   }
 }
-
-.link-active:focus {
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.01);
-  box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.70);
-}
-
-.link-active:active {
-  color: #31352B;
-  text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.50);
-  box-shadow: none;
-  filter: drop-shadow(0px 0px 5px rgba(49, 53, 43, 0.50));
-
-  path {
-    stroke: #31352B;
-  }
-}
-
-////↑↑↑↑ Активные Стили для link ↑↑↑↑↑  ////
-
 
 //// ↓↓↓↓↓ Активные Стили для ecomerce ↓↓↓↓↓↓ ///////
-.icon-active:hover {
-  border-radius: 5px;
-  background-color: #FF7A50;
+.icon-active {
+  &:hover {
+    background-color: $accent2;
 
-  path {
-    stroke: #FFF;
+    path {
+      stroke: $white;
+    }
+
+    ellipse {
+      stroke: $white;
+    }
+
+    span {
+      background-color: $white;
+      color: $accent;
+    }
   }
 
-  ellipse {
-    stroke: #FFF;
+  &:focus {
+    background-color: rgba(255, 122, 80, 0.10);
+    box-shadow: 0 0 0 2px rgba($accent, 0.70);
+
+    path {
+      stroke: #363853;
+    }
+
+    ellipse {
+      stroke: #363853;
+    }
+
+    span {
+      background-color: $accent;
+      color: #FFF;
+    }
   }
 
-  span {
-    background-color: #fff;
-    color: #FF6838;
-  }
-}
+  &:active {
+    background-color: #FFF2ED;
+    box-shadow: none;
 
+    path {
+      stroke: $title;
+    }
 
-.icon-active:focus {
-  border-radius: 5px;
-  background-color: rgba(255, 122, 80, 0.10);
-  box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.70);
+    ellipse {
+      stroke: $title;
+    }
 
-  path {
-    stroke: #363853;
-  }
-
-  ellipse {
-    stroke: #363853;
-  }
-
-  span {
-    background-color: #FF6838;
-    color: #FFF;
-  }
-}
-
-.icon-active:active {
-  border-radius: 5px;
-  background-color: #FFF2ED;
-  box-shadow: none;
-
-  path {
-    stroke: #363853;
-  }
-
-  ellipse {
-    stroke: #363853;
-  }
-
-  span {
-    background-color: #FF6838;
-    color: #FFF;
+    span {
+      background-color: $accent;
+      color: $white;
+    }
   }
 }
 
-////↑↑↑↑ Активные Стили для ecomerce ↑↑↑↑↑  ////
+//// ↓↓↓↓↓ Активные Стили для icon ↓↓↓↓↓↓ ///////
+.social-icon-active {
+  &:hover {
+    circle {
+      fill: $accent2;
+    }
 
-
-
-.social-icon-active:hover {
-  circle {
-    fill: #FF7A50;
+    path {
+      fill: $white;
+    }
   }
 
-  path {
-    fill: #fff;
-  }
-}
+  &:focus {
+    background-color: #ff7a501a;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgba($accent, 0.70);
 
-.social-icon-active:focus {
-  background-color: #ff7a501a;
-  border-radius: 50%;
-  box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.70);
+    circle {
+      fill: #ff7a501a;
+    }
 
-  circle {
-    fill: #ff7a501a;
-  }
-
-  path {
-    fill: #31352B;
-  }
-}
-
-.social-icon-active:active {
-  box-shadow: none;
-
-  circle {
-    fill: #FFF2ED;
+    path {
+      fill: #31352B;
+    }
   }
 
-  path {
-    fill: #FF7A50;
+  &:active {
+    box-shadow: none;
+
+    circle {
+      fill: #FFF2ED;
+    }
+
+    path {
+      fill: $accent2;
+    }
   }
 }
