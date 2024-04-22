@@ -8,8 +8,11 @@
 }
 
 .logo {
+  border-radius: 5px;
   padding: 4px 0 0 0;
-  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+  transition: 
+   opacity 0.3s ease, 
+   box-shadow 0.3s ease;
 }
 
 .menu {
@@ -65,17 +68,18 @@
   }
 
   &__ecommerce-item:not(:last-child) {
-    margin-right: 35px;
+    margin-right: 15px;
   }
 
   &__ecommerce-link {
     display: block;
     padding: 10px;
     height: 44px;
+    width: 44px;
     transition: 
-    border-radius 0.3s ease,
-    background-color 0.3s ease,
-    box-shadow 0.3s ease;
+     border-radius 0.3s ease,
+     background-color 0.3s ease,
+     box-shadow 0.3s ease;
   }
 
   &__ecommerce-link-num {
@@ -130,12 +134,16 @@
     border: 1px solid #C2C2C2;
     margin-bottom: 12px;
     width: 100%;
-    transition: border-radius 0.3s ease, border 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: 
+     border-radius 0.3s ease, 
+     border 0.3s ease, 
+     background-color 0.3s ease, 
+     box-shadow 0.3s ease;
 
     &::placeholder {
       color: #C2C2C2;
       font-size: 14px;
-      font-weight: 400;
+      @extend %rubik-400;
       padding: 0;
       transition: color 0.3s ease;
     }
@@ -149,9 +157,12 @@
     padding: 13px 46px 13px 63px;
     background-color: #FF6838;
     font-size: 14px;
-    font-weight: 500;
+    @extend %rubik-500;
     position: relative;
-    transition: color 0.3s ease, border-radius 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: color 0.3s ease, 
+     border-radius 0.3s ease, 
+     background-color 0.3s ease, 
+     box-shadow 0.3s ease;
   }
 
   .active-btn svg path {
@@ -184,7 +195,7 @@
 
   &__contact-link {
     font-size: 16px;
-    padding-left: 31px;
+    padding: 3px 3px 3px 31px;
     position: relative;
     transition:
       color 0.3s ease,
@@ -199,7 +210,7 @@
     height: 24px;
     width: 24px;
     left: 0;
-    top: -2px;
+    top: 1px;
   }
 
   .link-active svg path {
@@ -215,9 +226,9 @@
     width: 39px;
     height: 39px;
     transition: 
-    background-color 0.3s ease,
-    border-radius 0.3s ease,
-    box-shadow 0.3s ease;
+     background-color 0.3s ease,
+     border-radius 0.3s ease,
+     box-shadow 0.3s ease;
   }
 
   .social-icon-active svg path {
@@ -238,7 +249,7 @@
   text-align: center;
   font-size: 14px;
   padding: 30px 0;
-  border-top: 1px solid rgba(194, 194, 194);
+  border-top: 1px solid rgba(194, 194, 194, 0.2);
 }
 
 @import 'media';
