@@ -103,6 +103,7 @@
   margin: 0 auto;
   padding: 155px 15px;
   position: relative;
+  margin-bottom: 60px;
 
   &__bg {
     background-image: url(../images/hero-bg.png);
@@ -174,6 +175,29 @@
 .popular-categoty {
   padding: 60px 0;
   text-align: center;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__filter-list {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+  }
+
+  &__filter-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    padding: 13px 32px;
+    height: 70px;
+    background-color: $white;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #ECECEC;
+    width: max-content;
+  }
 }
 
 .footer {
