@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SimpleFood</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="menu">
+        <a class="logo logo-active" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="=логотип" width="200px" height="39px">
+        </a>
+        <div class="menu__items">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link link-active link-active--deskr" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link link-active" href="#">
+                Блюда
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link link-active" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <ul class="user-ecommerce">
+            <li class="user-ecommerce__item">
+              <button class="user-ecommerce__link icon-active" type="button">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="9.76663" cy="9.63009" rx="8.98856" ry="8.88424" stroke="#363853" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16.0184 16.2708L19.5424 19.7448" stroke="#363853" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span class="sr-only">Поиск</span>
+              </button>
+            </li>
+            <li class="user-ecommerce__item">
+              <a class="user-ecommerce__link icon-active" href="#">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1 1.17578L3.08 1.5316L4.04301 12.8715C4.12001 13.7976 4.90301 14.5082 5.84301 14.5053H16.752C17.649 14.5072 18.41 13.8549 18.537 12.9772L19.486 6.49532C19.592 5.77083 19.083 5.09872 18.351 4.99395C18.287 4.98505 3.414 4.98011 3.414 4.98011"
+                    stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M12.375 8.63337H15.1479" stroke="#363853" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M5.4043 17.9316C5.70527 17.9316 5.94824 18.1729 5.94824 18.4696C5.94824 18.7673 5.70527 19.0085 5.4043 19.0085C5.10333 19.0085 4.86035 18.7673 4.86035 18.4696C4.86035 18.1729 5.10333 17.9316 5.4043 17.9316Z"
+                    stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.6846 17.9316C16.9856 17.9316 17.2296 18.1729 17.2296 18.4696C17.2296 18.7673 16.9856 19.0085 16.6846 19.0085C16.3836 19.0085 16.1406 18.7673 16.1406 18.4696C16.1406 18.1729 16.3836 17.9316 16.6846 17.9316Z"
+                    stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="user-ecommerce__link-num">
+                  4
+                </span>
+                <span class="sr-only">Корзина</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__item footer__item-form">
+          <a class="logo footer__logo logo-active" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="логотип">
+          </a>
+          <form class="form">
+            <label class="sr-only form__label">
+              Введите почту
+            </label>
+            <input class="form__input form-active" type="email" name="email" placeholder="Ваш email" required>
+            <button class="button form__btn active-btn" type="submit">
+              Подписаться
+              <svg class="form__btn-icon active-btn" fill="white" width="17" height="16">
+                <g id="surface1">
+                  <path
+                    d="M 9.105469 13.40625 C 8.875 13.40625 8.664062 13.277344 8.5625 13.070312 L 6.757812 9.453125 C 6.660156 9.253906 6.675781 9.015625 6.804688 8.832031 L 9.710938 4.875 L 5.769531 7.792969 C 5.585938 7.921875 5.347656 7.9375 5.152344 7.835938 L 1.550781 6.03125 C 1.332031 5.921875 1.203125 5.695312 1.214844 5.449219 C 1.226562 5.207031 1.382812 4.996094 1.609375 4.914062 L 13.144531 0.648438 C 13.363281 0.566406 13.613281 0.621094 13.78125 0.789062 C 13.949219 0.957031 14.003906 1.207031 13.921875 1.429688 L 9.671875 13.007812 C 9.589844 13.234375 9.378906 13.390625 9.136719 13.40625 C 9.125 13.40625 9.113281 13.40625 9.105469 13.40625 Z M 9.105469 13.40625 " />
+                </g>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <ul class="footer__info-list">
+          <li class="footer__info-item">
+            <a class="footer__info-link link-active" href="#">
+              Как это работает
+            </a>
+          </li>
+          <li class="footer__info-item">
+            <a class="footer__info-link link-active" href="#">
+              Продукты
+            </a>
+          </li>
+          <li class="footer__info-item">
+            <a class="footer__info-link link-active" href="#">
+              Блюда
+            </a>
+          </li>
+          <li class="footer__info-item">
+            <a class="footer__info-link link-active" href="#">
+              Меню
+            </a>
+          </li>
+          <li class="footer__info-item">
+            <a class="footer__info-link link-active" href="#">
+              О нас
+            </a>
+          </li>
+          <li class="footer__info-item">
+            <a class="footer__info-link link-active" href="#">
+              Новости
+            </a>
+          </li>
+          <li class="footer__info-item">
+            <a class="footer__info-link link-active" href="#">
+              Партнеры
+            </a>
+          </li>
+          <li class="footer__info-item">
+            <a class="footer__info-link link-active" href="#">
+              ЧаВо
+            </a>
+          </li>
+          <li class="footer__info-item">
+            <a class="footer__info-link link-active" href="#">
+              Скачать приложение
+            </a>
+          </li>
+          <li class="footer__info-item">
+            <a class="footer__info-link link-active" href="#">
+              Блог
+            </a>
+          </li>
+          <li class="footer__info-item">
+            <a class="footer__info-link link-active" href="#">
+              Что нового?
+            </a>
+          </li>
+          <li class="footer__info-item">
+            <a class="footer__info-link link-active" href="#">
+              Карта сайта
+            </a>
+          </li>
+        </ul>
+        <address class="address">
+          <ul class="address__contact-list">
+            <li class="address__info-item">
+              <a class="address__contact-link link-active" href="#" target="_blank" rel="noopener noreferrer">
+                ул. Т.Г.Шевченко, 1
+                <svg class="address__contact-icon link-active" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g id="Iconly/Light/Location">
+                    <g id="Location">
+                      <path id="Stroke 1" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M14.5 10.5005C14.5 9.11924 13.3808 8 12.0005 8C10.6192 8 9.5 9.11924 9.5 10.5005C9.5 11.8808 10.6192 13 12.0005 13C13.3808 13 14.5 11.8808 14.5 10.5005Z"
+                        stroke="#31352B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path id="Stroke 3" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.9995 21C10.801 21 4.5 15.8984 4.5 10.5633C4.5 6.38664 7.8571 3 11.9995 3C16.1419 3 19.5 6.38664 19.5 10.5633C19.5 15.8984 13.198 21 11.9995 21Z"
+                        stroke="#31352B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="address__info-item">
+              <a class="address__contact-link link-active" href="tel:380501112233">
+                380501112233
+                <svg class="address__contact-icon link-active" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g id="Iconly/Light/Calling">
+                    <g id="Calling">
+                      <path d="M14.353 2.5C18.054 2.911 20.978 5.831 21.393 9.532" stroke="#31352B" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M14.353 6.043C16.124 6.387 17.508 7.772 17.853 9.543" stroke="#31352B" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path id="Stroke 5" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.0315 12.4724C15.0205 16.4604 15.9254 11.8467 18.4653 14.3848C20.9138 16.8328 22.3222 17.3232 19.2188 20.4247C18.8302 20.737 16.3613 24.4943 7.68447 15.8197C-0.993406 7.144 2.76157 4.67244 3.07394 4.28395C6.18377 1.17385 6.66682 2.58938 9.11539 5.03733C11.6541 7.5765 7.04254 8.48441 11.0315 12.4724Z"
+                        stroke="#31352B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="address__info-item">
+              <a class="address__contact-link link-active" href="mailto:support@sfood.com">
+                support@sfood.com
+                <svg class="address__contact-icon link-active" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g id="Iconly/Light/Message">
+                    <g id="Message">
+                      <path
+                        d="M17.9026 8.85114L13.4593 12.4642C12.6198 13.1302 11.4387 13.1302 10.5992 12.4642L6.11841 8.85114"
+                        stroke="#31352B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16.9089 21C19.9502 21.0084 22 18.5095 22 15.4384V8.57001C22 5.49883 19.9502 3 16.9089 3H7.09114C4.04979 3 2 5.49883 2 8.57001V15.4384C2 18.5095 4.04979 21.0084 7.09114 21H16.9089Z"
+                        stroke="#31352B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="address__social-list">
+            <li class="address__social-item">
+              <a class="address__social-link social-icon-active" href="#" target="_blank" rel="noopener noreferrer">
+                <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="19.5" cy="19.5" r="19.5" fill="#ECECEC" />
+                  <path
+                    d="M17.5468 29.5264V19.8948H15V16.427H17.5468V13.465C17.5468 11.1375 19.0512 9.00006 22.5176 9.00006C23.9211 9.00006 24.959 9.13461 24.959 9.13461L24.8772 12.373C24.8772 12.373 23.8188 12.3627 22.6638 12.3627C21.4137 12.3627 21.2134 12.9387 21.2134 13.8949V16.427H24.9765L24.8128 19.8948H21.2134V29.5264H17.5468Z"
+                    fill="#31352B" />
+                </svg>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+            <li class="address__social-item">
+              <a class="address__social-link social-icon-active" href="#" target="_blank" rel="noopener noreferrer">
+                <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="19.5" cy="19.5" r="19.5" fill="#ECECEC" />
+                  <path
+                    d="M29.5263 12.9808C28.7715 13.3064 27.95 13.5408 27.1039 13.632C27.9824 13.1101 28.6402 12.2856 28.954 11.3132C28.1297 11.8036 27.2266 12.1475 26.2849 12.3296C25.8913 11.9088 25.4153 11.5736 24.8865 11.3448C24.3577 11.1161 23.7874 10.9987 23.2113 10.9999C20.8802 10.9999 19.0054 12.8895 19.0054 15.2083C19.0054 15.5339 19.0448 15.8596 19.109 16.1728C15.6184 15.9903 12.5053 14.3227 10.4357 11.7696C10.0586 12.4137 9.86095 13.1471 9.86338 13.8935C9.86338 15.3539 10.6059 16.6415 11.7382 17.3989C11.0709 17.3726 10.4193 17.1892 9.83625 16.8636V16.9154C9.83625 18.9603 11.2818 20.655 13.2084 21.0448C12.8466 21.1388 12.4745 21.1868 12.1008 21.1879C11.827 21.1879 11.5679 21.1607 11.3065 21.1237C11.8393 22.7913 13.3909 24.0025 15.2386 24.042C13.793 25.1742 11.9824 25.8403 10.0163 25.8403C9.66357 25.8403 9.33795 25.8279 9 25.7885C10.8649 26.9849 13.0776 27.6756 15.4606 27.6756C23.1965 27.6756 27.4295 21.2668 27.4295 15.7042C27.4295 15.5216 27.4295 15.3391 27.4172 15.1565C28.2362 14.5571 28.954 13.8146 29.5263 12.9808Z"
+                    fill="#31352B" />
+                </svg>
+                <span class="sr-only">twitter</span>
+              </a>
+            </li>
+            <li class="address__social-item">
+              <a class="address__social-link social-icon-active" href="#" target="_blank" rel="noopener noreferrer">
+                <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="19.5" cy="19.5" r="19.5" fill="#ECECEC" />
+                  <path
+                    d="M19.7476 16.4986C17.9572 16.4986 16.4962 17.9596 16.4962 19.7499C16.4962 21.5403 17.9572 23.0013 19.7476 23.0013C21.5379 23.0013 22.9989 21.5403 22.9989 19.7499C22.9989 17.9596 21.5379 16.4986 19.7476 16.4986ZM29.4993 19.7499C29.4993 18.4035 29.5115 17.0693 29.4359 15.7253C29.3602 14.1643 29.0041 12.7789 27.8626 11.6373C26.7186 10.4934 25.3356 10.1397 23.7746 10.0641C22.4282 9.98847 21.094 10.0007 19.75 10.0007C18.4036 10.0007 17.0694 9.98847 15.7254 10.0641C14.1644 10.1397 12.7789 10.4958 11.6374 11.6373C10.4934 12.7813 10.1398 14.1643 10.0641 15.7253C9.98853 17.0718 10.0007 18.406 10.0007 19.7499C10.0007 21.0939 9.98853 22.4306 10.0641 23.7745C10.1398 25.3356 10.4959 26.721 11.6374 27.8625C12.7814 29.0065 14.1644 29.3602 15.7254 29.4358C17.0718 29.5114 18.406 29.4992 19.75 29.4992C21.0964 29.4992 22.4306 29.5114 23.7746 29.4358C25.3356 29.3602 26.7211 29.0041 27.8626 27.8625C29.0066 26.7186 29.3602 25.3356 29.4359 23.7745C29.5139 22.4306 29.4993 21.0963 29.4993 19.7499ZM19.7476 24.7526C16.9791 24.7526 14.7449 22.5184 14.7449 19.7499C14.7449 16.9815 16.9791 14.7472 19.7476 14.7472C22.516 14.7472 24.7503 16.9815 24.7503 19.7499C24.7503 22.5184 22.516 24.7526 19.7476 24.7526ZM24.9551 15.7107C24.3088 15.7107 23.7868 15.1887 23.7868 14.5424C23.7868 13.896 24.3088 13.374 24.9551 13.374C25.6015 13.374 26.1235 13.896 26.1235 14.5424C26.1237 14.6958 26.0936 14.8479 26.035 14.9897C25.9763 15.1315 25.8903 15.2604 25.7817 15.3689C25.6732 15.4775 25.5443 15.5635 25.4025 15.6222C25.2606 15.6808 25.1086 15.7109 24.9551 15.7107Z"
+                    fill="#31352B" />
+                </svg>
+                <span class="sr-only">instagram</span>
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      © 2022 Simple Food
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
