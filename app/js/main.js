@@ -10,18 +10,18 @@ $(function () {
     },
     breakpoints: {
       640: {
-        slidesPerView: 3,
+        slidesPerView: 4,
       },
       480: {
-        slidesPerView: 2,
+        slidesPerView: 3,
       },
       360: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
     },
 
   });
   
-
-
 });
+
+var mixer = mixitup('.catalog');
