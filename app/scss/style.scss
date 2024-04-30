@@ -221,7 +221,7 @@
 .catalog {
   margin-bottom: 60px;
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: 20% 20% 20% 20% 20%;
   gap: 30px;
 
   &__card-item {
