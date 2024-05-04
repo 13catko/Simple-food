@@ -1,5 +1,5 @@
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -328,5 +328,149 @@ main {
     path {
       fill: $title;
     }
+  }
+}
+
+.button-arrow {
+  border-radius: 20px;
+  background: $accent;
+  width: 79px;
+  height: 33px;
+  position: absolute;
+  display: block;
+  right: 20px;
+  bottom: 20px;
+  transition:
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+
+  &:hover {
+    background-color: #FFF;
+    box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.70);
+
+    span {
+      background-color: $accent;
+      left: 75%;
+      transition:
+        left 0.3s ease,
+        background-color 0.3s ease;
+
+      &::after {
+        background-color: $accent;
+      }
+
+      &::before {
+        background-color: $accent;
+      }
+    }
+  }
+
+  &:focus {
+    background-color: #FFF2ED;
+    box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.70);
+
+    span {
+      background-color: $accent;
+      left: 50%;
+      transition:
+        left 0.3s ease,
+        background-color 0.3s ease;
+
+      &::after {
+        background-color: $accent;
+      }
+
+      &::before {
+        background-color: $accent;
+      }
+    }
+  }
+
+  &:active {
+    background-color: #FFF2ED;
+    box-shadow: none;
+
+    span {
+      background-color: $accent;
+      left: 50%;
+      transition:
+        left 0.3s ease,
+        background-color 0.3s ease;
+
+      &::after {
+        background-color: $accent;
+      }
+
+      &::before {
+        background-color: $accent;
+      }
+    }
+  }
+
+  &__arrow {
+    display: block;
+    background-color: $white;
+    width: 14px;
+    height: 2px;
+    border-radius: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: $white;
+      width: 8px;
+      height: 2px;
+      border-radius: 1px;
+      top: 0;
+      right: 0;
+      transform: rotate(45deg) translate(-10%, -110%);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      background: $white;
+      width: 8px;
+      height: 2px;
+      border-radius: 1px;
+      top: 0;
+      right: 0;
+      transform: rotate(-45deg) translate(-10%, 110%);
+    }
+  }
+}
+
+.global-link {
+  border-radius: 5px;
+  position: relative;
+  transition:
+    display 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    text-shadow 0.3s ease;
+
+  &:focus::before {
+    display: none;
+  }
+
+  &:hover::before {
+    display: none;
+  }
+
+  &:active::before {
+    display: none;
+  }
+
+  &::before {
+    content: '';
+    height: 1px;
+    background-color: $title;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    position: absolute;
   }
 }
