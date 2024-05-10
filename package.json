@@ -19,6 +19,7 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^10.0.0",
     "gulp-sass": "^5.1.0",
+    "gulp-svg-sprite": "^2.0.3",
     "gulp-uglify": "^3.0.2",
     "imagemin": "^8.0.1",
     "jquery": "^3.7.1",
