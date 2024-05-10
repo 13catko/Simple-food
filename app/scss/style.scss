@@ -372,18 +372,20 @@
     gap: 30px;
   }
 
-  &__article {
-    border-radius: 10px;
-    background-color: $white;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.10);
-    padding-bottom: 23px;
-    position: relative;
-    transition: box-shadow 0.3s ease;
+}
 
-    &:hover {
-      box-shadow: 0 3px 15px 0 rgba(255, 104, 56, 0.50);
-    }
+.restaurants-article {
+  border-radius: 10px;
+  background-color: $white;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.10);
+  padding-bottom: 23px;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 3px 15px 0 rgba(255, 104, 56, 0.50);
   }
+
 
   &__img {
     width: 100%;
@@ -414,8 +416,8 @@
       transform: translateY(-50%)
     }
   }
-
 }
+
 
 .reviews {
   padding: 60px 0 0;
