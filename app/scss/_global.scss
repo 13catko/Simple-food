@@ -69,7 +69,7 @@ body {
   &:hover {
     color: $accent;
 
-    path {
+    svg {
       fill: $accent;
     }
 
@@ -86,7 +86,7 @@ body {
     background-color: rgba(255, 122, 80, 0.10);
     box-shadow: 0 0 0 2px rgba($accent, 0.70);
 
-    path {
+    svg {
       fill: $accent;
     }
   }
@@ -133,7 +133,7 @@ body {
   &:hover {
     color: $accent;
 
-    path {
+    svg {
       stroke: $accent;
     }
   }
@@ -144,13 +144,13 @@ body {
   }
 
   &:active {
-    color: #31352B;
+    color: $title;
     text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.50);
     box-shadow: none;
     filter: drop-shadow(0 0 5px rgba(49, 53, 43, 0.50));
 
-    path {
-      stroke: #31352B;
+    svg {
+      stroke: $title;
     }
   }
 }
@@ -160,11 +160,7 @@ body {
   &:hover {
     background-color: $accent2;
 
-    path {
-      stroke: $white;
-    }
-
-    ellipse {
+    svg {
       stroke: $white;
     }
 
@@ -178,11 +174,7 @@ body {
     background-color: rgba(255, 122, 80, 0.10);
     box-shadow: 0 0 0 2px rgba($accent, 0.70);
 
-    path {
-      stroke: #363853;
-    }
-
-    ellipse {
+    svg {
       stroke: #363853;
     }
 
@@ -196,11 +188,7 @@ body {
     background-color: #FFF2ED;
     box-shadow: none;
 
-    path {
-      stroke: $title;
-    }
-
-    ellipse {
+    svg {
       stroke: $title;
     }
 
@@ -256,7 +244,7 @@ body {
     background-color 0.3s ease,
     box-shadow 0.3s ease;
 
-  svg path {
+  svg {
     transition:
       fill 0.3s ease,
   }
@@ -266,7 +254,7 @@ body {
     background-color: rgba(255, 122, 80, 0.10);
     box-shadow: 0 0 0 2px rgba($accent, 0.70);
 
-    path {
+    svg {
       fill: $accent;
     }
   }
@@ -275,7 +263,7 @@ body {
     box-shadow: 0 0 0 2px rgba($accent, 0.70);
     color: $title;
 
-    path {
+    svg {
       fill: $title;
     }
   }
@@ -285,7 +273,7 @@ body {
     box-shadow: 0 -5px 12px 0 rgba($accent, 0.20) inset;
     color: $title;
 
-    path {
+    svg {
       fill: $title;
     }
   }
@@ -296,7 +284,7 @@ body {
   color: $white;
 
 
-  svg path {
+  svg {
     fill: $white;
   }
 
@@ -305,7 +293,7 @@ body {
     background-color: rgba(255, 122, 80, 0.10);
     box-shadow: none;
 
-    path {
+    svg {
       fill: $accent !important;
     }
   }
@@ -314,7 +302,7 @@ body {
     box-shadow: 0 0 0 2px rgba($accent, 0.70);
     color: $white;
 
-    path {
+    svg {
       fill: $white;
     }
   }
@@ -324,7 +312,7 @@ body {
     box-shadow: 0 -5px 12px 0 rgba($accent, 0.20) inset;
     color: $title;
 
-    path {
+    svg {
       fill: $title;
     }
   }
@@ -475,3 +463,10 @@ body {
     position: absolute;
   }
 }
+
+
+
+
+
+
+

@@ -10,6 +10,7 @@ $(function () {
     arrows: true,
     dots: true,
     fade: false,
+    infinite: false,
     autoplay: false,
     autoplaySpeed: 2000,
   });
