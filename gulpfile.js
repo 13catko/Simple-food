@@ -9,6 +9,9 @@ const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 const del = require('del');
 const svgSprite = require('gulp-svg-sprite');
+const cheerio = require('gulp-cheerio');
+const replace = require('gulp-replace');
+
 const gifsicle = require('imagemin-gifsicle');
 const mozjpeg = require('imagemin-mozjpeg');
 const optipng = require('imagemin-optipng');
@@ -89,17 +92,27 @@ function cleanDist() {
 }
 
 function svgSprites() {
-  return src('app/images/icon-svg/*.svg') // выбираем в папке с иконками все файлы с расширением svg
+  return src('app/images/icon-sprite/*.svg')
+    .pipe(cheerio({
+      run: ($) => {
+        $("[fill]").removeAttr("fill"); // очищаем цвет
+        $("[stroke]").removeAttr("stroke"); // очищаем, если есть лишние атрибуты
+        $("[style]").removeAttr("style"); // убираем внутренние стили для иконок
+      },
+      parserOptions: { xmlMode: true },
+    })
+    )
+    .pipe(replace('&gt;', '>')) // боремся с заменой символа 
     .pipe(
       svgSprite({
         mode: {
           stack: {
-            sprite: '../sprite.svg', // указываем имя файла спрайта и путь
+            sprite: '../sprite.svg',
           },
         },
       })
     )
-    .pipe(dest('app/images')); // указываем, в какую папку поместить готовый файл спрайта
+    .pipe(dest('app/images'));
 }
 
 function watching() {
@@ -121,4 +134,4 @@ exports.build = series(cleanDist, images, build);
 
 
 
-exports.default = parallel(svgSprites, styles, scripts, browsersync, watching,)
+exports.default = parallel(svgSprites, styles, scripts, browsersync, watching)

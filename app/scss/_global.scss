@@ -69,7 +69,7 @@ body {
   &:hover {
     color: $accent;
 
-    path {
+    svg {
       fill: $accent;
     }
 
@@ -83,16 +83,16 @@ body {
 
   &:focus {
     color: $accent;
-    background-color: rgba(255, 122, 80, 0.10);
+    background-color: rgba($accent2, 0.10);
     box-shadow: 0 0 0 2px rgba($accent, 0.70);
 
-    path {
+    svg {
       fill: $accent;
     }
   }
 
   &:active {
-    background-color: #FFF2ED;
+    background-color: $accent3;
     box-shadow: none;
   }
 }
@@ -118,7 +118,7 @@ body {
 .form-active {
   &:focus {
     border-radius: 5px;
-    border: 1px solid rgba(194, 194, 194, 0.00);
+    border: 1px solid rgba($grey, 0.00);
     background-color: $white;
     box-shadow: 0 0 0 2px $accent;
   }
@@ -133,7 +133,7 @@ body {
   &:hover {
     color: $accent;
 
-    path {
+    svg {
       stroke: $accent;
     }
   }
@@ -144,13 +144,13 @@ body {
   }
 
   &:active {
-    color: #31352B;
-    text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.50);
+    color: $title;
+    text-shadow: 2px 2px 5px rgba($default, 0.50);
     box-shadow: none;
-    filter: drop-shadow(0 0 5px rgba(49, 53, 43, 0.50));
+    filter: drop-shadow(0 0 5px rgba($default, 0.50));
 
-    path {
-      stroke: #31352B;
+    svg {
+      stroke: $title;
     }
   }
 }
@@ -160,11 +160,7 @@ body {
   &:hover {
     background-color: $accent2;
 
-    path {
-      stroke: $white;
-    }
-
-    ellipse {
+    svg {
       stroke: $white;
     }
 
@@ -175,15 +171,11 @@ body {
   }
 
   &:focus {
-    background-color: rgba(255, 122, 80, 0.10);
+    background-color: rgba($accent2, 0.10);
     box-shadow: 0 0 0 2px rgba($accent, 0.70);
 
-    path {
-      stroke: #363853;
-    }
-
-    ellipse {
-      stroke: #363853;
+    svg {
+      stroke: $title;
     }
 
     span {
@@ -193,14 +185,10 @@ body {
   }
 
   &:active {
-    background-color: #FFF2ED;
+    background-color: $accent3;
     box-shadow: none;
 
-    path {
-      stroke: $title;
-    }
-
-    ellipse {
+    svg {
       stroke: $title;
     }
 
@@ -214,37 +202,28 @@ body {
 //// ↓↓↓↓↓ Активные Стили для icon ↓↓↓↓↓↓ ///////
 .social-icon-active {
   &:hover {
-    circle {
-      fill: $accent2;
-    }
+    background-color: $accent2;
 
-    path {
+    svg {
       fill: $white;
     }
   }
 
   &:focus {
-    background-color: #ff7a501a;
+    background-color: $accent3;
     border-radius: 50%;
     box-shadow: 0 0 0 2px rgba($accent, 0.70);
 
-    circle {
-      fill: #ff7a501a;
-    }
-
-    path {
-      fill: #31352B;
+    svg {
+      fill: $default;
     }
   }
 
   &:active {
     box-shadow: none;
+    background-color: $accent3;
 
-    circle {
-      fill: #FFF2ED;
-    }
-
-    path {
+    svg {
       fill: $accent2;
     }
   }
@@ -256,17 +235,17 @@ body {
     background-color 0.3s ease,
     box-shadow 0.3s ease;
 
-  svg path {
+  svg {
     transition:
       fill 0.3s ease,
   }
 
   &:hover {
     color: $accent;
-    background-color: rgba(255, 122, 80, 0.10);
+    background-color: rgba($accent2, 0.10);
     box-shadow: 0 0 0 2px rgba($accent, 0.70);
 
-    path {
+    svg {
       fill: $accent;
     }
   }
@@ -275,7 +254,7 @@ body {
     box-shadow: 0 0 0 2px rgba($accent, 0.70);
     color: $title;
 
-    path {
+    svg {
       fill: $title;
     }
   }
@@ -285,50 +264,16 @@ body {
     box-shadow: 0 -5px 12px 0 rgba($accent, 0.20) inset;
     color: $title;
 
-    path {
+    svg {
       fill: $title;
     }
   }
 }
 
-.mixitup-control-active {
-  background-color: $accent;
-  color: $white;
 
 
-  svg path {
-    fill: $white;
-  }
 
-  &:hover {
-    color: $accent !important;
-    background-color: rgba(255, 122, 80, 0.10);
-    box-shadow: none;
 
-    path {
-      fill: $accent !important;
-    }
-  }
-
-  &:focus {
-    box-shadow: 0 0 0 2px rgba($accent, 0.70);
-    color: $white;
-
-    path {
-      fill: $white;
-    }
-  }
-
-  &:active {
-    background-color: $white;
-    box-shadow: 0 -5px 12px 0 rgba($accent, 0.20) inset;
-    color: $title;
-
-    path {
-      fill: $title;
-    }
-  }
-}
 
 .button-arrow {
   display: block;
@@ -345,7 +290,7 @@ body {
 
   &:hover {
     background-color: $white;
-    box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.70);
+    box-shadow: 0 0 0 2px rgba($accent, 0.70);
 
     span {
       background-color: $accent;
@@ -365,8 +310,8 @@ body {
   }
 
   &:focus {
-    background-color: #FFF2ED;
-    box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.70);
+    background-color: $accent3;
+    box-shadow: 0 0 0 2px rgba($accent, 0.70);
 
     span {
       background-color: $accent;
@@ -386,7 +331,7 @@ body {
   }
 
   &:active {
-    background-color: #FFF2ED;
+    background-color: $accent3;
     box-shadow: none;
 
     span {
