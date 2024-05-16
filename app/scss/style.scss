@@ -225,7 +225,7 @@
     padding: 13px 32px;
     border-radius: 5px;
     background-color: $white;
-    box-shadow: 0 0 0 1px #ECECEC;
+    box-shadow: 0 0 0 1px $silver;
     width: max-content;
   }
 
@@ -233,17 +233,47 @@
     height: 44px;
     width: 44px;
   }
-}
 
-.mixitup-control-active {
-  box-shadow: none;
-  background-color: $accent;
-  color: $white;
+  .mixitup-control-active {
+    box-shadow: none;
+    background-color: $accent;
+    color: $white;
 
-  svg path {
-    fill: $white;
+    svg {
+      fill: $white;
+    }
+
+    &:hover {
+      color: $accent !important;
+      background-color: rgba($accent2, 0.10);
+      box-shadow: none;
+
+      svg {
+        fill: $accent !important;
+      }
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px rgba($accent, 0.70);
+      color: $white;
+
+      svg {
+        fill: $white;
+      }
+    }
+
+    &:active {
+      background-color: $white;
+      box-shadow: 0 -5px 12px 0 rgba($accent, 0.20) inset;
+      color: $title;
+
+      svg {
+        fill: $title;
+      }
+    }
   }
 }
+
 
 .catalog {
   margin-bottom: 60px;
@@ -256,7 +286,8 @@
   }
 }
 
-.article-food {
+.product-food {
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -265,12 +296,12 @@
   min-height: 299px;
   padding: 20px 15px;
   border-radius: 5px;
-  background: #FFF;
-  box-shadow: 0 0 0 1px #ECECEC;
+  background: $white;
+  box-shadow: 0 0 0 1px $silver;
   transition: box-shadow 0.3s ease;
 
   &:hover {
-    box-shadow: 0 0 0 1px #FF6838;
+    box-shadow: 0 0 0 1px $accent;
   }
 
   &__product-title {
@@ -394,18 +425,17 @@
 
 }
 
-.restaurants-article {
+.restaurants-card {
   border-radius: 10px;
   background-color: $white;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.10);
+  box-shadow: 0 3px 3px 0 rgba($black, 0.10);
   padding-bottom: 23px;
   position: relative;
   transition: box-shadow 0.3s ease;
 
   &:hover {
-    box-shadow: 0 3px 15px 0 rgba(255, 104, 56, 0.50);
+    box-shadow: 0 3px 15px 0 rgba($accent, 0.50);
   }
-
 
   &__img {
     width: 100%;
@@ -413,6 +443,7 @@
   }
 
   &__text {
+    @extend %rubik-400;
     font-size: 24px;
     margin-left: 20px;
     margin-bottom: 20px;
@@ -440,7 +471,6 @@
     }
   }
 }
-
 
 .reviews {
   padding: 60px 0 0;
@@ -489,8 +519,8 @@
         }
 
         button:hover {
-          background-color: #FFF2ED;
-          box-shadow: 0 0 0 2px rgb(255, 174, 148) inset;
+          background-color: $accent3;
+          box-shadow: 0 0 0 2px $accent4 inset;
         }
 
         button:focus {
@@ -499,7 +529,7 @@
         }
 
         button:active {
-          background-color: rgb(255, 174, 148);
+          background-color: $accent4;
           box-shadow: none;
         }
       }
@@ -554,15 +584,15 @@
         background-color 0.3s ease, ;
 
       &:hover {
-        box-shadow: 0 0 0 3px #FFAE94 inset;
-        background-color: #FFF2ED;
+        box-shadow: 0 0 0 3px $accent4 inset;
+        background-color: $accent3;
 
         &::before {
-          background-color: #FFAE94;
+          background-color: $accent4;
         }
 
         &::after {
-          background-color: #FFAE94;
+          background-color: $accent4;
         }
       }
 
@@ -580,7 +610,7 @@
 
       &:active {
         box-shadow: none;
-        background-color: #FFF2ED;
+        background-color: $accent3;
 
         &::before {
           background-color: $accent;
@@ -643,7 +673,8 @@
   }
 
   &__content {
-    width: 641px;
+    max-width: 641px;
+    width: 100%;
   }
 
   &__blockquote {
@@ -656,26 +687,27 @@
     margin-bottom: 30px;
     position: relative;
 
-    &::after {
+
+
+    &::after,
+    &::before {
       content: '';
-      background-image: url('../images/icon/quotes.svg');
+      background-image: url('../images/sprite.svg#icon-quote-open');
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center;
       position: absolute;
       width: 24px;
-      height: 19px;
+      height: 19.5px;
+      filter: invert(87%) sepia(0%) saturate(3%) hue-rotate(59deg) brightness(91%) contrast(94%);
+    }
+
+    &::after {
       left: 0;
       top: 0;
     }
 
     &::before {
-      content: '';
-      background-image: url('../images/icon/quotes.svg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: absolute;
-      width: 24px;
-      height: 19px;
       right: 0;
       bottom: 0;
       transform: scaleX(-1);
@@ -694,6 +726,7 @@
   }
 
   &__about-author {
+    display: block;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -709,6 +742,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__content {
+    max-width: 538px;
+    width: 100%;
   }
 
   &__title {
@@ -745,6 +783,15 @@
   &__link--apple {
     width: 120px;
     height: 40px;
+  }
+
+  &__bg {
+    max-width: 570px;
+    width: 100%;
+    height: 380px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -795,7 +842,7 @@
     font-size: 14px;
     padding: 11px 15px 10px 15px;
     border-radius: 5px;
-    border: 1px solid #C2C2C2;
+    border: 1px solid $grey;
     margin-bottom: 7px;
     width: 100%;
     transition:
@@ -837,8 +884,12 @@
     margin-bottom: 15px;
   }
 
+  &__social-item:not(:last-child) {
+    margin-right: 13px;
+  }
+
   &__info-item:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
   }
 
   &__contact-link {
@@ -866,39 +917,41 @@
     }
   }
 
-  &__social-list {
-    display: flex;
-  }
-
-  &__social-link {
-    display: block;
-    width: 39px;
-    height: 39px;
-    transition:
-      background-color 0.3s ease,
-      border-radius 0.3s ease,
-      box-shadow 0.3s ease;
-  }
-
-  .social-icon-active svg path {
-    transition: fill 0.3s ease;
-  }
-
-  .social-icon-active svg circle {
-    transition: fill 0.3s ease;
-  }
-
-  &__social-item:not(:last-child) {
-    margin-right: 13px;
-  }
 }
 
+
+.social-list {
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 13px;
+  }
+
+  &__link {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: $silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      fill: $default;
+      width: 19px;
+      height: 19px;
+      transition: fill 0.3s ease;
+    }
+
+    transition: background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  }
+}
 
 .footer__copyright {
   text-align: center;
   font-size: 14px;
   padding: 30px 0;
-  border-top: 1px solid rgba(194, 194, 194, 0.2);
+  border-top: 1px solid rgba($grey, 0.2);
 }
 
 
