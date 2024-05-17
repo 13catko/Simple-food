@@ -2,6 +2,7 @@
 @import 'fonts';
 @import 'vars';
 @import 'global';
+@import 'mixin';
 
 .header {
   padding: 60px 0;
@@ -121,9 +122,8 @@
   }
 
   &__bg {
-    background-image: url('../images/hero-bg.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: right;
     z-index: -1;
     position: absolute;
@@ -150,44 +150,13 @@
 
   &__text {
     margin-bottom: 15px;
+    @include line-clamp(3);
   }
 
   &__link-btn {
     padding: 12px 32px;
     margin-right: 30px;
     font-size: 18px;
-  }
-}
-
-.global-link {
-  border-radius: 5px;
-  position: relative;
-  transition:
-    display 0.3s ease,
-    background-color 0.3s ease,
-    box-shadow 0.3s ease,
-    text-shadow 0.3s ease;
-
-  &:focus::before {
-    display: none;
-  }
-
-  &:hover::before {
-    display: none;
-  }
-
-  &:active::before {
-    display: none;
-  }
-
-  &::before {
-    content: '';
-    height: 1px;
-    background-color: $title;
-    bottom: 2px;
-    left: 0;
-    right: 0;
-    position: absolute;
   }
 }
 
@@ -308,6 +277,7 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 1.1;
+    @include line-clamp(2);
   }
 
   &__product-price {
@@ -335,7 +305,6 @@
   }
 
   &__bg {
-    content: '';
     max-width: 440px;
     width: 100%;
     height: 585px;
@@ -351,10 +320,12 @@
 
   &__title {
     margin-bottom: 30px;
+    @include line-clamp(2);
   }
 
   &__text {
     margin-bottom: 31px;
+    @include line-clamp(5);
   }
 
   &__list {
@@ -372,7 +343,7 @@
       position: absolute;
       background-repeat: no-repeat;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       width: 34px;
       height: 34px;
       left: 0;
@@ -440,17 +411,25 @@
   &__img {
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px 10px 0 0;
   }
 
   &__text {
     @extend %rubik-400;
     font-size: 24px;
-    margin-left: 20px;
+    padding-left: 20px;
     margin-bottom: 20px;
   }
 
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+
   &__time {
-    margin-left: 20px;
     font-size: 18px;
     font-weight: 300;
     padding-left: 32px;
@@ -686,8 +665,7 @@
     line-height: 1.5;
     margin-bottom: 30px;
     position: relative;
-
-
+    @include line-clamp(10);
 
     &::after,
     &::before {
@@ -756,6 +734,7 @@
   &__text {
     max-width: 538px;
     margin-bottom: 30px;
+    @include line-clamp(11);
   }
 
   &__list {
