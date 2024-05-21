@@ -7,6 +7,9 @@
 html,
 body {
   height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column
 }
 
 body {
@@ -16,8 +19,6 @@ body {
   font-style: normal;
   line-height: 1.5;
   background-color: $bg;
-  display: flex;
-  flex-direction: column;
 }
 
 .sr-only {
@@ -31,6 +32,10 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.pad-60-0 {
+  padding: 60px 0;
 }
 
 .main {

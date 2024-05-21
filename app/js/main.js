@@ -28,17 +28,17 @@ $(function () {
 
 });
 
-// var mixer = mixitup('.catalog');
+var mixer = mixitup('.catalog');
 
-var mixer = mixitup('.catalog', {
+// var mixer = mixitup('.catalog', {
   
-  animation: {
-    effects: 'fade scale(1) translateZ'
-  },
+//   animation: {
+//     effects: 'fade scale(1) translateZ'
+//   },
 
-  // controls: {
-  //   enable: 'true',
-  //   activeClass: 'on',
-  // }
-});
+//   // controls: {
+//   //   enable: 'true',
+//   //   activeClass: 'on',
+//   // }
+// });
 
