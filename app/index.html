@@ -46,7 +46,7 @@
             <li class="user-ecommerce__item">
               <button class="user-ecommerce__link icon-active" type="button">
                 <svg class="user-ecommerce__icon">
-                  <use xlink:href="images/sprite.svg#search-btn"></use>
+                  <use xlink:href="images/sprite.svg#icon-search"></use>
                 </svg>
                 <span class="sr-only">Поиск</span>
               </button>
@@ -75,7 +75,7 @@
         SIMPLE FOOD Быстрая доставка из ресторанов и кафе за 15 минут
       </h1>
       <div class="container">
-        <div class="hero__bg">
+        <div class="hero__bg" style="background-image: url('../images/hero-bg.png');">
           <span class="sr-only">изображение курьера</span>
         </div>
         <div class="hero__inner">
@@ -348,22 +348,24 @@
           Лучшие рестораны
         </h2>
         <ul class="restaurants__list">
-
+          
           <li class="restaurants__item">
             <article class="restaurants-card">
               <img class="restaurants-card__img" src="images/blaze.jpg" alt="пицца blaze" width="370" height="300">
               <h3 class="restaurants-card__text">
                 Blaze Pizza
               </h3>
-
-              <p class="restaurants-card__time" data-open="11:00" data-close="22:00">
-                11:00 - 22:00
-              </p>
-              <a class="button-arrow" href="#">
-                <span class="button-arrow__arrow"></span>
-                <span class="sr-only">Ссылка на ресторан</span>
-              </a>
-              
+              <div class="restaurants-card__wrapper">
+                <p class="restaurants-card__time" data-open="11:00" data-close="22:00">
+                  11:00 - 22:00
+                </p>
+                <a class="button-arrow" href="#">
+                  <svg class="button-icon">
+                    <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                  <span class="sr-only">Ссылка на ресторан</span>
+                </a>
+              </div>
             </article>
           </li>
 
@@ -373,13 +375,17 @@
               <h3 class="restaurants-card__text">
                 Pizza Runcho
               </h3>
-              <p class="restaurants-card__time" data-open="12:00" data-close="21:00">
-                12:00 - 21:00
-              </p>
-              <a class="button-arrow" href="#">
-                <span class="button-arrow__arrow"></span>
-                <span class="sr-only">Ссылка на ресторан</span>
-              </a>
+              <div class="restaurants-card__wrapper">
+                <p class="restaurants-card__time" data-open="12:00" data-close="21:00">
+                  12:00 - 21:00
+                </p>
+                <a class="button-arrow" href="#">
+                  <svg class="button-icon">
+                    <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                  <span class="sr-only">Ссылка на ресторан</span>
+                </a>
+              </div>
             </article>
           </li>
 
@@ -389,13 +395,17 @@
               <h3 class="restaurants-card__text">
                 Pizza Hut
               </h3>
-              <p class="restaurants-card__time" data-open="11:00" data-close="22:00">
-                11:00 - 22:00
-              </p>
-              <a class="button-arrow" href="#">
-                <span class="button-arrow__arrow"></span>
-                <span class="sr-only">Ссылка на ресторан</span>
-              </a>
+              <div class="restaurants-card__wrapper">
+                <p class="restaurants-card__time" data-open="11:00" data-close="22:00">
+                  11:00 - 22:00
+                </p>
+                <a class="button-arrow" href="#">
+                  <svg class="button-icon">
+                    <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                  <span class="sr-only">Ссылка на ресторан</span>
+                </a>
+              </div>
             </article>
           </li>
 
@@ -405,13 +415,17 @@
               <h3 class="restaurants-card__text">
                 McDonald`s
               </h3>
-              <p class="restaurants-card__time" data-open="06:00" data-close="23:00">
-                06:00 - 23:00
-              </p>
-              <a class="button-arrow" href="#">
-                <span class="button-arrow__arrow"></span>
-                <span class="sr-only">Ссылка на ресторан</span>
-              </a>
+              <div class="restaurants-card__wrapper">
+                <p class="restaurants-card__time" data-open="06:00" data-close="23:00">
+                  06:00 - 23:00
+                </p>
+                <a class="button-arrow" href="#">
+                  <svg class="button-icon">
+                    <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                  <span class="sr-only">Ссылка на ресторан</span>
+                </a>
+              </div>
             </article>
           </li>
 
@@ -421,13 +435,17 @@
               <h3 class="restaurants-card__text">
                 KFC
               </h3>
-              <p class="restaurants-card__time" data-open="06:00" data-close="23:30">
-                06:00 - 23:30
-              </p>
-              <a class="button-arrow" href="#">
-                <span class="button-arrow__arrow"></span>
-                <span class="sr-only">Ссылка на ресторан</span>
-              </a>
+              <div class="restaurants-card__wrapper">
+                <p class="restaurants-card__time" data-open="06:00" data-close="23:30">
+                  06:00 - 23:30
+                </p>
+                <a class="button-arrow" href="#">
+                  <svg class="button-icon">
+                    <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                  <span class="sr-only">Ссылка на ресторан</span>
+                </a>
+              </div>
             </article>
           </li>
 
@@ -438,16 +456,20 @@
               <h3 class="restaurants-card__text">
                 Star Burgers
               </h3>
-              <p class="restaurants-card__time" data-open="09:00" data-close="21:00">
-                09:00 - 21:00
-              </p>
-              <a class="button-arrow" href="#">
-                <span class="button-arrow__arrow"></span>
-                <span class="sr-only">Ссылка на ресторан</span>
-              </a>
+              <div class="restaurants-card__wrapper">
+                <p class="restaurants-card__time" data-open="09:00" data-close="21:00">
+                  09:00 - 21:00
+                </p>
+                <a class="button-arrow" href="#">
+                  <svg class="button-icon">
+                    <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                  <span class="sr-only">Ссылка на ресторан</span>
+                </a>
+              </div>
             </article>
           </li>
-          
+
         </ul>
       </div>
     </section>
@@ -542,11 +564,13 @@
         </li>
 
       </ul>
+      <div class="arrows-wrap"></div>
     </section>
 
     <section class="mobile-app">
       <div class="container">
         <div class="mobile-app__inner">
+
           <div class="mobile-app__content">
 
             <h2 class="title mobile-app__title">
@@ -558,6 +582,7 @@
             </p>
 
             <ul class="mobile-app__list">
+
               <li class="mobile-app__item">
                 <a class="mobile-app__link mobile-app__link--android"
                   href="https://play.google.com/store/apps?hl=ru&gl=US" target="_blank" rel="noreferrer noopener"
@@ -572,10 +597,13 @@
                   <span class="sr-only">ссылка на App Store</span>
                 </a>
               </li>
+
             </ul>
 
           </div>
+
           <div class="mobile-app__bg" style="background-image: url(images/app.jpg);"></div>
+
         </div>
       </div>
     </section>
@@ -591,7 +619,8 @@
             <img class="logo__img" src="images/logo.svg" alt="=логотип" width="200" height="39">
           </a>
           <form class="form">
-            <input class="form__input form-active" type="email" name="email" placeholder="Ваш email" required aria-label="введите ваш email">
+            <input class="form__input form-active" type="email" name="email" placeholder="Ваш email" required
+              aria-label="введите ваш email">
             <button class="button form__btn active-btn" type="submit">
               Подписаться
               <svg>
@@ -667,6 +696,7 @@
         <address class="address">
 
           <ul class="address__contact-list">
+
             <li class="address__info-item">
               <a class="address__contact-link link-active" href="#" target="_blank" rel="noopener noreferrer">
                 ул. Т.Г.Шевченко, 1
@@ -675,6 +705,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="address__info-item">
               <a class="address__contact-link link-active" href="tel:380501112233">
                 380501112233
@@ -683,6 +714,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="address__info-item">
               <a class="address__contact-link link-active" href="mailto:support@sfood.com">
                 support@sfood.com
@@ -691,9 +723,11 @@
                 </svg>
               </a>
             </li>
+
           </ul>
-          
+
           <ul class="social-list">
+
             <li class="social-list__item">
               <a class="social-list__link social-icon-active" href="#" target="_blank" rel="noopener noreferrer">
                 <svg>
