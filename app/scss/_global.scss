@@ -36,6 +36,11 @@ body {
 
 .pad-60-0 {
   padding: 60px 0;
+
+    @include mq('tablet') {
+      padding: 24px 0;
+    }
+
 }
 
 .main {
