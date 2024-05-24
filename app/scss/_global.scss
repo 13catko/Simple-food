@@ -37,9 +37,13 @@ body {
 .pad-60-0 {
   padding: 60px 0;
 
-    @include mq('tablet') {
-      padding: 24px 0;
-    }
+  @include mq('tablet-2') {
+    padding: 40px 0;
+  }
+
+  @include mq('tablet') {
+    padding: 20px 0;
+  }
 
 }
 
@@ -67,6 +71,14 @@ body {
   font-weight: 500;
   line-height: 1.3;
   @extend %rubik-500;
+
+  @include mq('tablet-2') {
+    font-size: 30px;
+  }
+
+  @include mq('phone') {
+    font-size: 24px;
+  }
 }
 
 .link-active--deskr {
@@ -331,6 +343,7 @@ body {
 }
 
 .global-link {
+  display: inline-block;
   border-radius: 5px;
   position: relative;
   transition:
@@ -338,6 +351,10 @@ body {
     background-color 0.3s ease,
     box-shadow 0.3s ease,
     text-shadow 0.3s ease;
+
+  @include mq('tablet-2') {
+    font-size: 16px;
+  }
 
   &:focus::before {
     display: none;
