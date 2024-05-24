@@ -10,6 +10,13 @@ $bg: #F9FAFF;
 $title: #363853;
 $default: #31352B;
 
+$breakpoints: (
+  "phone": 560px,
+  "tablet": 768px,
+  "tablet-2": 992px,
+  "desktop": 1230px
+);
+
 
 %rubik-400 {
   font-family: 'Rubik', sans-serif;

@@ -18,13 +18,17 @@
 
 <body>
 
-  <header class="header">
+  <header class="header pad-60-0">
+    
     <div class="container">
       <nav class="menu">
-        <a class="logo logo-active" href="#">
+
+        <a class="logo logo-active header-logo" href="#">
           <img class="logo__img" src="images/logo.svg" alt="=логотип" width="200" height="39">
         </a>
+
         <div class="menu__items">
+
           <ul class="menu__list">
             <li class="menu__list-item">
               <a class="menu__list-link link-active link-active--deskr" href="#">
@@ -42,6 +46,7 @@
               </a>
             </li>
           </ul>
+
           <ul class="user-ecommerce">
             <li class="user-ecommerce__item">
               <button class="user-ecommerce__link icon-active" type="button">
@@ -63,12 +68,119 @@
               </a>
             </li>
           </ul>
+
+          <button class="menu__mobile-btn" type="button">
+            <span class="menu__mobile-btn-line"></span>
+            <span class="sr-only">кнопка меню</span>
+          </button>
+
         </div>
+
+        <div class="mobile-menu">
+
+          <div class="mobile-menu__inner">
+
+            <a class="logo logo-active header-logo mobile-menu__logo" href="#">
+              <img class="logo__img" src="images/logo.svg" alt="=логотип" width="200" height="39">
+            </a>
+
+            <button class="btn-close">
+              <span class="btn-close__cross"></span>
+              <span class="sr-only">кнопка закрыть</span>
+            </button>
+          </div>
+
+          <ul class="menu__list mobile-menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link link-active link-active--deskr" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link link-active" href="#">
+                Блюда
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link link-active" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+
+          <address class="address mobile-menu__address">
+
+            <ul class="address__contact-list">
+
+              <li class="address__info-item">
+                <a class="address__contact-link link-active" href="#" target="_blank" rel="noopener noreferrer">
+                  ул. Т.Г.Шевченко, 1
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-location"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="address__info-item">
+                <a class="address__contact-link link-active" href="tel:380501112233">
+                  380501112233
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-call"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="address__info-item">
+                <a class="address__contact-link link-active" href="mailto:support@sfood.com">
+                  support@sfood.com
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-message"></use>
+                  </svg>
+                </a>
+              </li>
+
+            </ul>
+
+            <ul class="social-list">
+
+              <li class="social-list__item">
+                <a class="social-list__link social-icon-active" href="#" target="_blank" rel="noopener noreferrer">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                  <span class="sr-only">Facebook</span>
+                </a>
+              </li>
+
+              <li class="social-list__item">
+                <a class="social-list__link social-icon-active" href="#" target="_blank" rel="noopener noreferrer">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+
+              <li class="social-list__item">
+                <a class="social-list__link social-icon-active" href="#" target="_blank" rel="noopener noreferrer">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                  <span class="sr-only">instagram</span>
+                </a>
+              </li>
+
+            </ul>
+
+          </address>
+
+        </div>
+
       </nav>
     </div>
   </header>
 
-  <main class="main">
+   <main class="main">
 
     <section class="hero">
       <h1 class="sr-only">
@@ -92,13 +204,11 @@
           <a class="global-link link-active" href="#">
             Подробнее
           </a>
-
         </div>
-
       </div>
     </section>
 
-    <section class="popular-categoty">
+   <section class="popular-categoty pad-60-0">
       <div class="container">
 
         <h2 class="title popular-categoty__title">
@@ -307,7 +417,7 @@
       </div>
     </section>
 
-    <section class="delivery">
+    <section class="delivery pad-60-0">
       <div class="container">
         <div class="delivery__inner">
           <div class="delivery__bg" style="background-image: url('images/food-delivery.png');"></div>
@@ -342,13 +452,13 @@
       </div>
     </section>
 
-    <section class="restaurants">
+    <section class="restaurants pad-60-0">
       <div class="container">
         <h2 class="title restaurants__title">
           Лучшие рестораны
         </h2>
         <ul class="restaurants__list">
-          
+
           <li class="restaurants__item">
             <article class="restaurants-card">
               <img class="restaurants-card__img" src="images/blaze.jpg" alt="пицца blaze" width="370" height="300">
@@ -474,7 +584,7 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <!--<section class="reviews pad-60-0">
       <h2 class="title reviews__title">
         Отзывы клиентов
       </h2>
@@ -567,7 +677,7 @@
       <div class="arrows-wrap"></div>
     </section>
 
-    <section class="mobile-app">
+    <section class="mobile-app pad-60-0">
       <div class="container">
         <div class="mobile-app__inner">
 
@@ -610,7 +720,7 @@
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer pad-60-0">
     <div class="container">
       <div class="footer__inner">
 
@@ -765,7 +875,7 @@
     <div class="footer__copyright">
       © 2022 Simple Food
     </div>
-  </footer>
+  </footer> -->
 
   <script src="js/main.min.js"></script>
 </body>
