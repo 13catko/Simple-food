@@ -21,6 +21,10 @@ body {
   background-color: $bg;
 }
 
+.main {
+  flex-grow: 1;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -47,9 +51,6 @@ body {
 
 }
 
-.main {
-  flex-grow: 1;
-}
 
 .button {
   color: $white;
