@@ -25,8 +25,6 @@ $(function () {
   });
 
 
-
-
   const btn = document.querySelector('.menu__mobile-btn'); //наша кнопка
   const btnclose = document.querySelector('.btn-close')
   const mobileMenu = document.querySelector('.mobile-menu'); //мобильное меню
@@ -40,22 +38,23 @@ $(function () {
 
     if (mobileMenu.classList.contains('menu--active')) { //Проверяем, есть ли у меню активный класс
       bodyLock.classList.add('lock'); //Блокируем скролл при открытом меню
-      // fixed.classList.remove('fixed-menu');
+      fixed.classList.add('fixed-menu--deskr');
     }
 
     else { //Когда нету активного класса у меню
-      
+      fixed.classList.remove('fixed-menu--deskr');
       bodyLock.classList.remove('lock'); //Разрешаем скроллить
     }
   });
+
 
   document.addEventListener('click', function (e) {
     if (e.target !== btn && e.target !== mobileMenu) {
       mobileMenu.classList.remove('menu--active');
       bodyLock.classList.remove('lock');
+      fixed.classList.remove('fixed-menu--deskr');
     }
   });
-
 
 
   let swiperTwo; // Объявляем переменную для свайпера
