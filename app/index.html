@@ -16,12 +16,16 @@
 
 </head>
 
+
+
 <body>
+
+  
 
   <header class="header pad-60-0">
     
     <div class="container">
-      <nav class="menu">
+      <nav class="menu" id="header">
 
         <a class="logo logo-active header-logo" href="#">
           <img class="logo__img" src="images/logo.svg" alt="=логотип" width="200" height="39">
@@ -77,19 +81,19 @@
         </div>
 
         <div class="mobile-menu">
-
+        
           <div class="mobile-menu__inner">
-
+        
             <a class="logo logo-active header-logo mobile-menu__logo" href="#">
               <img class="logo__img" src="images/logo.svg" alt="=логотип" width="200" height="39">
             </a>
-
+        
             <button class="btn-close">
               <span class="btn-close__cross"></span>
               <span class="sr-only">кнопка закрыть</span>
             </button>
           </div>
-
+        
           <ul class="menu__list mobile-menu__list">
             <li class="menu__list-item">
               <a class="menu__list-link link-active link-active--deskr" href="#">
@@ -107,11 +111,11 @@
               </a>
             </li>
           </ul>
-
+        
           <address class="address mobile-menu__address">
-
+        
             <ul class="address__contact-list">
-
+        
               <li class="address__info-item">
                 <a class="address__contact-link link-active" href="#" target="_blank" rel="noopener noreferrer">
                   ул. Т.Г.Шевченко, 1
@@ -120,7 +124,7 @@
                   </svg>
                 </a>
               </li>
-
+        
               <li class="address__info-item">
                 <a class="address__contact-link link-active" href="tel:380501112233">
                   380501112233
@@ -129,7 +133,7 @@
                   </svg>
                 </a>
               </li>
-
+        
               <li class="address__info-item">
                 <a class="address__contact-link link-active" href="mailto:support@sfood.com">
                   support@sfood.com
@@ -138,11 +142,11 @@
                   </svg>
                 </a>
               </li>
-
+        
             </ul>
-
+        
             <ul class="social-list">
-
+        
               <li class="social-list__item">
                 <a class="social-list__link social-icon-active" href="#" target="_blank" rel="noopener noreferrer">
                   <svg>
@@ -151,7 +155,7 @@
                   <span class="sr-only">Facebook</span>
                 </a>
               </li>
-
+        
               <li class="social-list__item">
                 <a class="social-list__link social-icon-active" href="#" target="_blank" rel="noopener noreferrer">
                   <svg>
@@ -160,7 +164,7 @@
                   <span class="sr-only">twitter</span>
                 </a>
               </li>
-
+        
               <li class="social-list__item">
                 <a class="social-list__link social-icon-active" href="#" target="_blank" rel="noopener noreferrer">
                   <svg>
@@ -169,11 +173,11 @@
                   <span class="sr-only">instagram</span>
                 </a>
               </li>
-
+        
             </ul>
-
+        
           </address>
-
+        
         </div>
 
       </nav>
@@ -457,224 +461,234 @@
         <h2 class="title restaurants__title">
           Лучшие рестораны
         </h2>
-        <ul class="restaurants__list">
+        <div class="restaurants__inner-list">
+          <ul class="restaurants__list swiper-wrapper">
 
-          <li class="restaurants__item">
-            <article class="restaurants-card">
-              <img class="restaurants-card__img" src="images/blaze.jpg" alt="пицца blaze" width="370" height="300">
-              <h3 class="restaurants-card__text">
-                Blaze Pizza
-              </h3>
-              <div class="restaurants-card__wrapper">
-                <p class="restaurants-card__time" data-open="11:00" data-close="22:00">
-                  11:00 - 22:00
-                </p>
-                <a class="button-arrow" href="#">
-                  <svg class="button-icon">
-                    <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
-                  </svg>
-                  <span class="sr-only">Ссылка на ресторан</span>
-                </a>
-              </div>
-            </article>
-          </li>
+            <li class="restaurants__item swiper-slide">
+              <article class="restaurants-card">
+                <img class="restaurants-card__img" src="images/blaze.jpg" alt="пицца blaze" width="370" height="300">
+                <h3 class="restaurants-card__text">
+                  Blaze Pizza
+                </h3>
+                <div class="restaurants-card__wrapper">
+                  <p class="restaurants-card__time" data-open="11:00" data-close="22:00">
+                    11:00 - 22:00
+                  </p>
+                  <a class="button-arrow" href="#">
+                    <svg class="button-icon">
+                      <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                    <span class="sr-only">Ссылка на ресторан</span>
+                  </a>
+                </div>
+              </article>
+            </li>
+  
+            <li class="restaurants__item swiper-slide">
+              <article class="restaurants-card">
+                <img class="restaurants-card__img" src="images/runcho.jpg" alt="пицца runcho" width="370" height="300">
+                <h3 class="restaurants-card__text">
+                  Pizza Runcho
+                </h3>
+                <div class="restaurants-card__wrapper">
+                  <p class="restaurants-card__time" data-open="12:00" data-close="21:00">
+                    12:00 - 21:00
+                  </p>
+                  <a class="button-arrow" href="#">
+                    <svg class="button-icon">
+                      <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                    <span class="sr-only">Ссылка на ресторан</span>
+                  </a>
+                </div>
+              </article>
+            </li>
+  
+            <li class="restaurants__item swiper-slide">
+              <article class="restaurants-card">
+                <img class="restaurants-card__img" src="images/hut.jpg" alt="пицца Pizza Hut" width="370" height="300">
+                <h3 class="restaurants-card__text">
+                  Pizza Hut
+                </h3>
+                <div class="restaurants-card__wrapper">
+                  <p class="restaurants-card__time" data-open="11:00" data-close="22:00">
+                    11:00 - 22:00
+                  </p>
+                  <a class="button-arrow" href="#">
+                    <svg class="button-icon">
+                      <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                    <span class="sr-only">Ссылка на ресторан</span>
+                  </a>
+                </div>
+              </article>
+            </li>
+  
+            <li class="restaurants__item swiper-slide">
+              <article class="restaurants-card">
+                <img class="restaurants-card__img" src="images/mc.jpg" alt="бургер McDonald`s" width="370" height="300">
+                <h3 class="restaurants-card__text">
+                  McDonald`s
+                </h3>
+                <div class="restaurants-card__wrapper">
+                  <p class="restaurants-card__time" data-open="06:00" data-close="23:00">
+                    06:00 - 23:00
+                  </p>
+                  <a class="button-arrow" href="#">
+                    <svg class="button-icon">
+                      <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                    <span class="sr-only">Ссылка на ресторан</span>
+                  </a>
+                </div>
+              </article>
+            </li>
+  
+            <li class="restaurants__item swiper-slide">
+              <article class="restaurants-card">
+                <img class="restaurants-card__img" src="images/KFC.jpg" alt="крылышки KFC" width="370" height="300">
+                <h3 class="restaurants-card__text">
+                  KFC
+                </h3>
+                <div class="restaurants-card__wrapper">
+                  <p class="restaurants-card__time" data-open="06:00" data-close="23:30">
+                    06:00 - 23:30
+                  </p>
+                  <a class="button-arrow" href="#">
+                    <svg class="button-icon">
+                      <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                    <span class="sr-only">Ссылка на ресторан</span>
+                  </a>
+                </div>
+              </article>
+            </li>
+  
+            <li class="restaurants__item swiper-slide">
+              <article class="restaurants-card">
+                <img class="restaurants-card__img" src="images/star.jpg" alt="пицца Star Burgers" width="370"
+                  height="300">
+                <h3 class="restaurants-card__text">
+                  Star Burgers
+                </h3>
+                <div class="restaurants-card__wrapper">
+                  <p class="restaurants-card__time" data-open="09:00" data-close="21:00">
+                    09:00 - 21:00
+                  </p>
+                  <a class="button-arrow" href="#">
+                    <svg class="button-icon">
+                      <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                    <span class="sr-only">Ссылка на ресторан</span>
+                  </a>
+                </div>
+              </article>
+            </li>
+  
+          </ul>
+          
+          <div class="swiper-pagination"></div>
 
-          <li class="restaurants__item">
-            <article class="restaurants-card">
-              <img class="restaurants-card__img" src="images/runcho.jpg" alt="пицца runcho" width="370" height="300">
-              <h3 class="restaurants-card__text">
-                Pizza Runcho
-              </h3>
-              <div class="restaurants-card__wrapper">
-                <p class="restaurants-card__time" data-open="12:00" data-close="21:00">
-                  12:00 - 21:00
-                </p>
-                <a class="button-arrow" href="#">
-                  <svg class="button-icon">
-                    <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
-                  </svg>
-                  <span class="sr-only">Ссылка на ресторан</span>
-                </a>
-              </div>
-            </article>
-          </li>
+        </div>
 
-          <li class="restaurants__item">
-            <article class="restaurants-card">
-              <img class="restaurants-card__img" src="images/hut.jpg" alt="пицца Pizza Hut" width="370" height="300">
-              <h3 class="restaurants-card__text">
-                Pizza Hut
-              </h3>
-              <div class="restaurants-card__wrapper">
-                <p class="restaurants-card__time" data-open="11:00" data-close="22:00">
-                  11:00 - 22:00
-                </p>
-                <a class="button-arrow" href="#">
-                  <svg class="button-icon">
-                    <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
-                  </svg>
-                  <span class="sr-only">Ссылка на ресторан</span>
-                </a>
-              </div>
-            </article>
-          </li>
 
-          <li class="restaurants__item">
-            <article class="restaurants-card">
-              <img class="restaurants-card__img" src="images/mc.jpg" alt="бургер McDonald`s" width="370" height="300">
-              <h3 class="restaurants-card__text">
-                McDonald`s
-              </h3>
-              <div class="restaurants-card__wrapper">
-                <p class="restaurants-card__time" data-open="06:00" data-close="23:00">
-                  06:00 - 23:00
-                </p>
-                <a class="button-arrow" href="#">
-                  <svg class="button-icon">
-                    <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
-                  </svg>
-                  <span class="sr-only">Ссылка на ресторан</span>
-                </a>
-              </div>
-            </article>
-          </li>
-
-          <li class="restaurants__item">
-            <article class="restaurants-card">
-              <img class="restaurants-card__img" src="images/KFC.jpg" alt="крылышки KFC" width="370" height="300">
-              <h3 class="restaurants-card__text">
-                KFC
-              </h3>
-              <div class="restaurants-card__wrapper">
-                <p class="restaurants-card__time" data-open="06:00" data-close="23:30">
-                  06:00 - 23:30
-                </p>
-                <a class="button-arrow" href="#">
-                  <svg class="button-icon">
-                    <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
-                  </svg>
-                  <span class="sr-only">Ссылка на ресторан</span>
-                </a>
-              </div>
-            </article>
-          </li>
-
-          <li class="restaurants__item">
-            <article class="restaurants-card">
-              <img class="restaurants-card__img" src="images/star.jpg" alt="пицца Star Burgers" width="370"
-                height="300">
-              <h3 class="restaurants-card__text">
-                Star Burgers
-              </h3>
-              <div class="restaurants-card__wrapper">
-                <p class="restaurants-card__time" data-open="09:00" data-close="21:00">
-                  09:00 - 21:00
-                </p>
-                <a class="button-arrow" href="#">
-                  <svg class="button-icon">
-                    <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
-                  </svg>
-                  <span class="sr-only">Ссылка на ресторан</span>
-                </a>
-              </div>
-            </article>
-          </li>
-
-        </ul>
       </div>
     </section>
 
-    <!--<section class="reviews pad-60-0">
-      <h2 class="title reviews__title">
-        Отзывы клиентов
-      </h2>
-      <ul class="reviews__inner">
-        <li class="reviews__items">
-          <div class="reviews__item">
-            <img class="reviews__img" src="images/foto-1.jpg" alt="фото пользователя" width="300" height="300">
-            <div class="reviews__content">
-              <blockquote class="reviews__blockquote">
-                SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе. Очень удобный сайт и
-                приложение. Их
-                доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку -
-                однозначно
-                рекомендую!
-              </blockquote>
-              <cite class="reviews__author">
-                Дарья
-              </cite>
-              <span class="reviews__about-author">
-                Ценитель вкусной еды
-              </span>
+    <section class="reviews pad-60-0">
+      <div class="reviews__wrapper">
+        <h2 class="title reviews__title">
+          Отзывы клиентов
+        </h2>
+        <ul class="reviews__inner">
+          <li class="reviews__items">
+            <div class="reviews__item">
+              <img class="reviews__img" src="images/foto-1.jpg" alt="фото пользователя" width="300" height="300">
+              <div class="reviews__content">
+                <blockquote class="reviews__blockquote">
+                  SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе. Очень удобный сайт и
+                  приложение. Их
+                  доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку -
+                  однозначно
+                  рекомендую!
+                </blockquote>
+                <cite class="reviews__author">
+                  Дарья
+                </cite>
+                <span class="reviews__about-author">
+                  Ценитель вкусной еды
+                </span>
+              </div>
             </div>
-          </div>
-        </li>
-
-        <li class="reviews__items">
-          <div class="reviews__item">
-            <img class="reviews__img" src="images/foto-1.jpg" alt="фото пользователя" width="300" height="300">
-            <div class="reviews__content">
-              <blockquote class="reviews__blockquote">
-                SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе. Очень удобный сайт и
-                приложение. Их
-                доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку -
-                однозначно
-                рекомендую!
-              </blockquote>
-              <cite class="reviews__author">
-                Дарья
-              </cite>
-              <span class="reviews__about-author">
-                Ценитель вкусной еды
-              </span>
+          </li>
+  
+          <li class="reviews__items">
+            <div class="reviews__item">
+              <img class="reviews__img" src="images/foto-1.jpg" alt="фото пользователя" width="300" height="300">
+              <div class="reviews__content">
+                <blockquote class="reviews__blockquote">
+                  SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе. Очень удобный сайт и
+                  приложение. Их
+                  доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку -
+                  однозначно
+                  рекомендую!
+                </blockquote>
+                <cite class="reviews__author">
+                  Дарья
+                </cite>
+                <span class="reviews__about-author">
+                  Ценитель вкусной еды
+                </span>
+              </div>
             </div>
-          </div>
-        </li>
-
-        <li class="reviews__items">
-          <div class="reviews__item">
-            <img class="reviews__img" src="images/foto-1.jpg" alt="фото пользователя" width="300" height="300">
-            <div class="reviews__content">
-              <blockquote class="reviews__blockquote">
-                SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе. Очень удобный сайт и
-                приложение. Их
-                доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку -
-                однозначно
-                рекомендую!
-              </blockquote>
-              <cite class="reviews__author">
-                Дарья
-              </cite>
-              <span class="reviews__about-author">
-                Ценитель вкусной еды
-              </span>
+          </li>
+  
+          <li class="reviews__items">
+            <div class="reviews__item">
+              <img class="reviews__img" src="images/foto-1.jpg" alt="фото пользователя" width="300" height="300">
+              <div class="reviews__content">
+                <blockquote class="reviews__blockquote">
+                  SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе. Очень удобный сайт и
+                  приложение. Их
+                  доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку -
+                  однозначно
+                  рекомендую!
+                </blockquote>
+                <cite class="reviews__author">
+                  Дарья
+                </cite>
+                <span class="reviews__about-author">
+                  Ценитель вкусной еды
+                </span>
+              </div>
             </div>
-          </div>
-        </li>
-
-        <li class="reviews__items">
-          <div class="reviews__item">
-            <img class="reviews__img" src="images/foto-1.jpg" alt="фото пользователя" width="300" height="300">
-            <div class="reviews__content">
-              <blockquote class="reviews__blockquote">
-                SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе. Очень удобный сайт и
-                приложение. Их
-                доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку -
-                однозначно
-                рекомендую!
-              </blockquote>
-              <cite class="reviews__author">
-                Дарья
-              </cite>
-              <span class="reviews__about-author">
-                Ценитель вкусной еды
-              </span>
+          </li>
+  
+          <li class="reviews__items">
+            <div class="reviews__item">
+              <img class="reviews__img" src="images/foto-1.jpg" alt="фото пользователя" width="300" height="300">
+              <div class="reviews__content">
+                <blockquote class="reviews__blockquote">
+                  SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе. Очень удобный сайт и
+                  приложение. Их
+                  доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку -
+                  однозначно
+                  рекомендую!
+                </blockquote>
+                <cite class="reviews__author">
+                  Дарья
+                </cite>
+                <span class="reviews__about-author">
+                  Ценитель вкусной еды
+                </span>
+              </div>
             </div>
-          </div>
-        </li>
-
-      </ul>
-      <div class="arrows-wrap"></div>
+          </li>
+  
+        </ul>
+        <div class="arrows-wrap">
+        </div>
+      </div>
     </section>
 
     <section class="mobile-app pad-60-0">
@@ -684,7 +698,7 @@
           <div class="mobile-app__content">
 
             <h2 class="title mobile-app__title">
-              Скачайте мобильное приложение
+              Скачайте мобильное <br> приложение
             </h2>
             <p class="mobile-app__text">
               Рестораны, которые вы любите - в ваших руках. Устанавливайте приложение и заказывайте еду в любом удобном
@@ -875,7 +889,7 @@
     <div class="footer__copyright">
       © 2022 Simple Food
     </div>
-  </footer> -->
+  </footer>
 
   <script src="js/main.min.js"></script>
 </body>
